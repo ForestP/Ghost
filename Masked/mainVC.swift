@@ -20,10 +20,12 @@ class mainVC: UIViewController {
     let createRoomSegue = "goToNewRoom"
     let joinRoomSegue = "goToJoinRoomVC"
     
+    let ds = DataService.instance
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ds = DataService.instance
 
         FIRAuth.auth()?.signInAnonymously(completion: { (user, err) in
             if err != nil {
@@ -31,7 +33,7 @@ class mainVC: UIViewController {
             } else {
                 if let uid = user?.uid {
                     print("uid: \(uid)")
-                    ds.userRef.child(uid).setValue("true")
+                    self.ds.userRef.child(uid).setValue("true")
                     self.currentUser = uid
                 }
             }
@@ -68,8 +70,9 @@ class mainVC: UIViewController {
         return numString
     }
     
+    
+    
     func generateRoom() -> String {
-        let ds = DataService.instance
         
         var roomNumber = ""
         var repeatedNum = true
@@ -83,6 +86,9 @@ class mainVC: UIViewController {
             }
         }
         
+        let userNum = arc4random_uniform(24)
+        
+        //let takenUsers = [userNum : Int(userNum)]
         
         let passcode = generateRandomNumber(numDigits: 4)
         
@@ -91,16 +97,16 @@ class mainVC: UIViewController {
             "createdDate": FIRServerValue.timestamp(),
             ] as [String : Any]
         
-        ds.roomRef.child(roomNumber).setValue(roomData)
+        self.ds.roomRef.child(roomNumber).setValue(roomData)
         
-        ds.addUserToRoom(uid: currentUser, RoomId: roomNumber)
+        self.ds.addUserToRoom(uid: currentUser, RoomId: roomNumber, userNum: "\(userNum)")
         
         return roomNumber
     }
     
     @IBAction func createRoomPressed(_ sender: Any) {
-        let ds = DataService.instance
-        ds.roomRef.observeSingleEvent(of: .value, with: { (snapshot) in
+        // MAYBE DISABLE?
+        self.ds.roomRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let rooms = snapshot.value as? Dictionary<String, AnyObject> {
                 for room in rooms {
                     self.currentRooms.append(room.key)
@@ -126,7 +132,6 @@ class mainVC: UIViewController {
         if segue.identifier == self.createRoomSegue {
             let chatRoomVC = (segue.destination as? chatRoomVC)
             chatRoomVC?.roomId = sender as! String
-            
         }
         
         if segue.identifier == self.joinRoomSegue {

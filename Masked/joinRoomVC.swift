@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class joinRoomVC: UIViewController {
 
@@ -33,7 +34,8 @@ class joinRoomVC: UIViewController {
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
         
         view.layer.insertSublayer(gradient, at: 0)
-    
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+
     }
 
     @IBAction func passwordJoinPressed(_ sender: Any) {
@@ -47,6 +49,26 @@ class joinRoomVC: UIViewController {
         self.tryToJoin()
     }
 
+    func generateUserNum(nums: [Int]) -> String{
+        
+        var numTaken = true
+        var userNumString = ""
+        while (numTaken) {
+            let userNum = arc4random_uniform(24)
+            for num in nums {
+                if Int(userNum) == num {
+                    break
+                } else {
+                    numTaken = false
+                    userNumString = "\(userNum)"
+                }
+            }
+        }
+        
+        return userNumString
+        
+    }
+    
     func tryToJoin() {
         
         var roomNum = ""
@@ -77,19 +99,45 @@ class joinRoomVC: UIViewController {
         roomPass = self.roomPassField.text!
         
         let ds = DataService.instance
-        print("num: \(roomNum)")
-        ds.roomRef.child(roomNum).child(FIR_PASS_REF).observeSingleEvent(of: .value, with: { (snapshot) in
-            if let pass = snapshot.value as? String {
-                if roomPass == pass {
-                    // segue to room
-                    if let userID = self.uid {
-                        ds.addUserToRoom(uid: userID, RoomId: roomNum)
-                        self.performSegue(withIdentifier: self.joinRoomSegue, sender: roomNum)
-                    }
+        
+        // Refactor into service
 
+        ds.roomRef.child(roomNum).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let roomInfo = snapshot.value as? Dictionary<String, AnyObject> {
+                if let pass = roomInfo[FIR_PASS_REF] as? String {
                     
-                } else {
-                    // invalid pass
+                    ds.roomMemberRef.child(roomNum).observeSingleEvent(of: .value, with: { (snapshot) in
+                        print(snapshot)
+                        if let takenNums = snapshot.value as? [String: String] {
+                            var userNums = USER_NUMS
+                            for num in takenNums {
+                                print(num)
+                                userNums.remove(at: Int(num.value)!)
+                            }
+                            
+                            let userNum = self.generateUserNum(nums: userNums)
+                            print("num: \(userNum)")
+                            
+                            guard userNum != "" else {
+                                print("room full")
+                                return
+                            }
+                            
+                            if roomPass == pass {
+                                // segue to room
+                                if let userID = self.uid {
+                                    ds.addUserToRoom(uid: userID, RoomId: roomNum, userNum: userNum)
+                                    self.performSegue(withIdentifier: self.joinRoomSegue, sender: roomNum)
+                                }
+                                
+                                
+                            } else {
+                                // invalid pass
+                                
+                            }
+                        }
+
+                    })
                     
                 }
             }

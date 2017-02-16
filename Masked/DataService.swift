@@ -36,11 +36,22 @@ class DataService {
         return mainRef.child(FIR_USERROOM_REF)
     }
 
-    func addUserToRoom(uid: String, RoomId: String) {
-        
-        roomMemberRef.child(RoomId).child(uid).setValue("true")
-        userRoomRef.child(uid).child(RoomId).setValue("true")
+    var messageRef: FIRDatabaseReference {
+        return mainRef.child(FIR_MESSAGE_REF)
     }
+    var roomMessageRef: FIRDatabaseReference {
+        return mainRef.child(FIR_ROOMMESSAGE_REF)
+    }
+    
+    func addUserToRoom(uid: String, RoomId: String, userNum: String) {
+        
+        roomMemberRef.child(RoomId).child(uid).setValue(userNum)
+        userRoomRef.child(uid).child(RoomId).setValue("true")
+        
+        //roomRef.child(RoomId).child(FIR_TAKENNUMS_REF).updateChildValues([userNum : Int(userNum)!])
+    }
+    
+
     
     func removeRoomAndContents(roomId: String) {
         

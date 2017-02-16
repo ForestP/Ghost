@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 import IQKeyboardManagerSwift
 
-class chatRoomVC: UIViewController {
+class chatRoomVC: UIViewController, ChatRoomServiceDelegate {
 
     var roomId: String!
+    var currentUserNum: String?
+    var roomMsgArray = [Message]()
     
     var createdDate: Double?
     var currentDate: Double?
@@ -22,7 +25,11 @@ class chatRoomVC: UIViewController {
     
     @IBOutlet weak var msgTextView: UITextView!
     @IBOutlet weak var timerLbl: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
+    let crs = ChatRoomService.instance
+    let ds = DataService.instance
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +38,13 @@ class chatRoomVC: UIViewController {
         
         self.updateRoomDate()
         
-        let ds = DataService.instance
+        self.crs.delegate = self
+        
         
         if var currentDate = NSDate().timeIntervalSince1970 as Double? {
             print("current: \(currentDate)")
             currentDate = currentDate * 1000
-            ds.roomRef.child(roomId).child(FIR_CREATEDDATE_REF).observeSingleEvent(of: .value, with: { (snapshot) in
+            self.ds.roomRef.child(roomId).child(FIR_CREATEDDATE_REF).observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 if let created = snapshot.value as? Double {
                     self.createdDate = created
@@ -45,7 +53,7 @@ class chatRoomVC: UIViewController {
                     print("time : \(remainingTime)")
                     if remainingTime <= 0 {
                         print("delete room")
-                        ds.roomRef.child(self.roomId).removeValue()
+                        self.ds.roomRef.child(self.roomId).removeValue()
                         // segue back to roomVC
                     } else {
                         // start timer, update label
@@ -58,12 +66,54 @@ class chatRoomVC: UIViewController {
         
         var _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateRoomDate), userInfo: nil, repeats: true);
 
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = true
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        
         self.msgTextView.keyboardDistanceFromTextField = 5; //This will modify default distance between textField and keyboard. For exact value, please manually check how far your textField from the bottom of the page. Mine was 8pt.
+        
+        self.msgTextView.placeholderText = "Start typing a message"
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(msgCell.self)
+        tableView.register(selfMsgCell.self)
+
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let uid = FIRAuth.auth()?.currentUser?.uid {
+            self.crs.getCurrentUserNum(roomId: self.roomId, uid: uid)
+            self.roomMsgArray = []
+            self.crs.getChatRoomMessages(roomId: self.roomId)
+        }
+    }
+    
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.crs.removeObservers()
+        print("Disappear")
+
+    }
+    
+    
+    func currentUserNumLoaded(userNum: String?) {
+        self.currentUserNum = userNum
+    }
+    
+    func messageLoaded(message: Message?) {
+        if let msg = message {
+            self.roomMsgArray.append(msg)
+            print("msg count: \(roomMsgArray.count)")
+        }
+        // Reload Table View
+        tableView.reloadData()
 
     }
     
     func updateRoomDate() {
-        let ds = DataService.instance
         
         if var currentDate = NSDate().timeIntervalSince1970 as Double? {
             currentDate = currentDate * 1000
@@ -71,7 +121,6 @@ class chatRoomVC: UIViewController {
                 let remainingTime = (created + self.lengthOfDay) - currentDate
                 if remainingTime <= 0 {
                     print("delete room")
-                    
                     // Add delete room func
                     ds.roomRef.child(self.roomId).removeValue()
                     // segue back to roomVC
@@ -79,42 +128,11 @@ class chatRoomVC: UIViewController {
                     // Update label
                     self.timerLbl.text = self.convertToHrsMins(remainingTime: remainingTime)
                 }
-                
             }
-            
-            
         }
     }
     
-    func convertToHrsMins(remainingTime: Double) -> String {
-        let hours = Int(remainingTime / (60 * 60 * 1000))
-        print("hours : \(hours)")
-        let mins = Int((remainingTime / (60 * 1000)).truncatingRemainder(dividingBy: 60))
-        print("mins: \(mins)")
-        let secs = Int((remainingTime / 1000).truncatingRemainder(dividingBy: 60))
-        print("secs: \(secs)")
-        
-        var secString = ""
-        var minString = ""
-        var hourString = ""
-        
-        if secs < 10 {
-            secString = "0\(secs)"
-        } else {
-            secString = "\(secs)"
-        }
-        if mins < 10 {
-            minString = "0\(mins)"
-        } else {
-            minString = "\(mins)"
-        }
-        if hours < 10 {
-            hourString = "0\(hours)"
-        } else {
-            hourString = "\(hours)"
-        }
-        return "\(hourString):\(minString):\(secString)"
-    }
+
 
     @IBAction func infoBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: roomInfoSegue, sender: roomId)
@@ -128,5 +146,97 @@ class chatRoomVC: UIViewController {
         }
     }
     
+    @IBAction func postMsgPressed(_ sender: Any) {
+        guard self.msgTextView.text != "" else {
+            print("msg text nil")
+            return
+        }
+        
+        guard self.currentUserNum != "" else {
+            print("user num not loaded")
+            return
+        }
+        
+        let msgText = self.msgTextView.text
+        let userNum = self.currentUserNum
+        
+        crs.postMessage(roomNum: roomId, msgText: msgText!, userNum: userNum!)
+        
+        self.msgTextView.text = ""
+        
+        self.msgTextView.resignFirstResponder()
+        
+        
+    }
+    
+    func convertToHrsMins(remainingTime: Double) -> String {
+        let hours = Int(remainingTime / (60 * 60 * 1000))
+        let mins = Int((remainingTime / (60 * 1000)).truncatingRemainder(dividingBy: 60))
+        let secs = Int((remainingTime / 1000).truncatingRemainder(dividingBy: 60))
+        
+        let secString = self.convertToString(num: secs)
+        let minString = self.convertToString(num: mins)
+        let hourString = self.convertToString(num: hours)
 
+        return "\(hourString):\(minString):\(secString)"
+    }
+    
+    func convertToString(num: Int) -> String {
+        var numString = ""
+        if num < 10 {
+            numString = "0\(num)"
+        } else {
+            numString = "\(num)"
+        }
+        
+        return numString
+    }
+
+}
+
+extension chatRoomVC: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        
+        return roomMsgArray.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 300
+        
+
+            // set comments
+        let message = roomMsgArray[indexPath.row]
+        if message.postedBy == self.currentUserNum {
+            // posted by current user
+            // !!! CHANGE ME !!!
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as selfMsgCell
+            cell.configureCell(message: message)
+            return cell
+        } else {
+            // posted by other
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as msgCell
+            cell.configureCell(message: message)
+            return cell
+            
+        }
+        
+        return msgCell()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension;
+    }
+    
+    
 }

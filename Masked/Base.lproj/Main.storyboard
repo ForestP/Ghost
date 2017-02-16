@@ -155,25 +155,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oES-5U-goS">
                                 <rect key="frame" x="0.0" y="622" width="375" height="45"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Start typing a message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-qg-FYG" customClass="messageView" customModule="Masked" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-qg-FYG" customClass="messageView" customModule="Masked" customModuleProvider="target">
                                         <rect key="frame" x="15" y="8" width="300" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xl-WS-3Bd">
+                                        <rect key="frame" x="338" y="12" width="22" height="22"/>
+                                        <connections>
+                                            <action selector="postMsgPressed:" destination="NvP-Yp-pyC" eventType="touchUpInside" id="Syn-a8-vHG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="1eA-qg-FYG" firstAttribute="leading" secondItem="oES-5U-goS" secondAttribute="leading" constant="15" id="8fP-sv-e3k"/>
                                     <constraint firstAttribute="height" constant="45" id="FA2-nM-Ijx"/>
+                                    <constraint firstAttribute="trailing" secondItem="2xl-WS-3Bd" secondAttribute="trailing" constant="15" id="GBW-dG-eMC"/>
                                     <constraint firstAttribute="trailing" secondItem="1eA-qg-FYG" secondAttribute="trailing" constant="60" id="JPB-P8-xXe"/>
+                                    <constraint firstItem="2xl-WS-3Bd" firstAttribute="centerY" secondItem="oES-5U-goS" secondAttribute="centerY" id="arW-O0-a7m"/>
                                     <constraint firstAttribute="bottom" secondItem="1eA-qg-FYG" secondAttribute="bottom" constant="8" id="mfN-9x-HWA"/>
                                     <constraint firstItem="1eA-qg-FYG" firstAttribute="top" secondItem="oES-5U-goS" secondAttribute="top" constant="8" id="u21-QT-rTH"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="59H-n1-HOZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="59H-n1-HOZ">
                                 <rect key="frame" x="0.0" y="65" width="375" height="557"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.1058658436" green="0.105891861" blue="0.1058642045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.10586584359407425" green="0.10589186102151871" blue="0.10586420446634293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,6 +203,7 @@
                     <connections>
                         <outlet property="IQLayoutGuideConstraint" destination="CKa-PI-svB" id="SHD-9Q-Mng"/>
                         <outlet property="msgTextView" destination="1eA-qg-FYG" id="1sP-gs-gAF"/>
+                        <outlet property="tableView" destination="59H-n1-HOZ" id="MMt-8c-MXS"/>
                         <outlet property="timerLbl" destination="aEW-e2-s2N" id="IPF-DE-mCY"/>
                         <segue destination="5dN-KM-0Za" kind="presentation" identifier="showRoomInfo" id="dDw-VF-S79"/>
                     </connections>
