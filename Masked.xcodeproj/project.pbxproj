@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		374E96EB51FFB8503C5C9196 /* Pods_Masked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2A5A88F1A851FB9E6FE06C /* Pods_Masked.framework */; };
+		AE027A891E561F2D00849B4E /* myRoomsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE027A871E561F2D00849B4E /* myRoomsCell.swift */; };
+		AE027A8A1E561F2D00849B4E /* myRoomsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE027A881E561F2D00849B4E /* myRoomsCell.xib */; };
+		AE027A8C1E5689BF00849B4E /* myRoomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE027A8B1E5689BF00849B4E /* myRoomsVC.swift */; };
+		AE027A8E1E568AD300849B4E /* MyRoomsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE027A8D1E568AD300849B4E /* MyRoomsService.swift */; };
 		AE53D2851E53C3ED00F87C8E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2841E53C3ED00F87C8E /* ReusableView.swift */; };
 		AE53D2871E53C41800F87C8E /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2861E53C41800F87C8E /* NibLoadableView.swift */; };
 		AE53D28A1E53C44500F87C8E /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2891E53C44500F87C8E /* UITableView+Ext.swift */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		7ACFD79562F66FEF87C72C73 /* Pods-Masked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masked.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masked/Pods-Masked.debug.xcconfig"; sourceTree = "<group>"; };
 		AC2A5A88F1A851FB9E6FE06C /* Pods_Masked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE027A871E561F2D00849B4E /* myRoomsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myRoomsCell.swift; sourceTree = "<group>"; };
+		AE027A881E561F2D00849B4E /* myRoomsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myRoomsCell.xib; sourceTree = "<group>"; };
+		AE027A8B1E5689BF00849B4E /* myRoomsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myRoomsVC.swift; sourceTree = "<group>"; };
+		AE027A8D1E568AD300849B4E /* MyRoomsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomsService.swift; sourceTree = "<group>"; };
 		AE53D2841E53C3ED00F87C8E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		AE53D2861E53C41800F87C8E /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		AE53D2891E53C44500F87C8E /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
@@ -187,6 +195,7 @@
 				AECE3FB61E51945B00EEE364 /* mainVC.swift */,
 				AECE3FC51E52BAC000EEE364 /* roomInfoVC.swift */,
 				AECE3FC71E52C39200EEE364 /* joinRoomVC.swift */,
+				AE027A8B1E5689BF00849B4E /* myRoomsVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +212,8 @@
 				AE53D29C1E53C6E300F87C8E /* selfMsgCell.swift */,
 				AE53D29D1E53C6E300F87C8E /* selfMsgCell.xib */,
 				AE53D2A41E558A6D00F87C8E /* msgCellView.swift */,
+				AE027A871E561F2D00849B4E /* myRoomsCell.swift */,
+				AE027A881E561F2D00849B4E /* myRoomsCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -212,6 +223,7 @@
 			children = (
 				AECE3FBF1E5198E300EEE364 /* DataService.swift */,
 				AE53D2A01E5527F600F87C8E /* ChatRoomService.swift */,
+				AE027A8D1E568AD300849B4E /* MyRoomsService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -287,6 +299,7 @@
 				AECE3FB01E5190F000EEE364 /* SFDisplay-Regular.otf in Resources */,
 				AECE3F9F1E51897A00EEE364 /* Main.storyboard in Resources */,
 				AECE3FB11E5190F000EEE364 /* SFDisplay-Thin.otf in Resources */,
+				AE027A8A1E561F2D00849B4E /* myRoomsCell.xib in Resources */,
 				AECE3FAC1E518A3D00EEE364 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE53D2A31E552C3200F87C8E /* Member.swift in Sources */,
+				AE027A8E1E568AD300849B4E /* MyRoomsService.swift in Sources */,
 				AECE3FB91E5194D100EEE364 /* roomButton.swift in Sources */,
 				AECE3F9A1E51897A00EEE364 /* AppDelegate.swift in Sources */,
 				AECE3FB71E51945B00EEE364 /* mainVC.swift in Sources */,
@@ -360,8 +374,10 @@
 				AECE3FBD1E5197DE00EEE364 /* chatRoomVC.swift in Sources */,
 				AE53D28D1E53C4AA00F87C8E /* Message.swift in Sources */,
 				AE53D2871E53C41800F87C8E /* NibLoadableView.swift in Sources */,
+				AE027A891E561F2D00849B4E /* myRoomsCell.swift in Sources */,
 				AECE3FC41E52BA3700EEE364 /* RoomInfoBox.swift in Sources */,
 				AE53D29E1E53C6E300F87C8E /* selfMsgCell.swift in Sources */,
+				AE027A8C1E5689BF00849B4E /* myRoomsVC.swift in Sources */,
 				AE53D28A1E53C44500F87C8E /* UITableView+Ext.swift in Sources */,
 				AECE3FC61E52BAC000EEE364 /* roomInfoVC.swift in Sources */,
 				AECE3FBB1E51977800EEE364 /* mainGradientView.swift in Sources */,

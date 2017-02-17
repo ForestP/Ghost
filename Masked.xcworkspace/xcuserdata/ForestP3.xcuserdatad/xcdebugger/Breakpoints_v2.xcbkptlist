@@ -58,11 +58,11 @@
                   moduleName = "Masked"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ForestP3/Desktop/Masked/Masked/ChatRoomService.swift"
-                  timestampString = "508953092.801602"
+                  timestampString = "508994021.231312"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
                   offsetFromSymbolStart = "32">
                </Location>
                <Location
@@ -73,11 +73,11 @@
                   moduleName = "Masked"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ForestP3/Desktop/Masked/Masked/ChatRoomService.swift"
-                  timestampString = "508953092.804104"
+                  timestampString = "508994021.232846"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
@@ -122,11 +122,11 @@
                   moduleName = "Masked"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ForestP3/Desktop/Masked/Masked/ChatRoomService.swift"
-                  timestampString = "508953092.449348"
+                  timestampString = "508994021.238326"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
                   offsetFromSymbolStart = "48">
                </Location>
                <Location
@@ -137,14 +137,30 @@
                   moduleName = "Masked"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ForestP3/Desktop/Masked/Masked/ChatRoomService.swift"
-                  timestampString = "508953092.452201"
+                  timestampString = "508994021.239936"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Masked/myRoomsVC.swift"
+            timestampString = "508993968.287472"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "roomLoaded(roomNum:memberCount:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
