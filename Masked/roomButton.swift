@@ -13,7 +13,7 @@ class roomButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let BTN_BORDER = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3)
+        let BTN_BORDER = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         
         layer.borderWidth = 1
         layer.cornerRadius = 5.0

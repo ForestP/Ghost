@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="37"/>
+            <point key="canvasLocation" x="-578" y="37"/>
         </scene>
         <!--My RoomsVC-->
         <scene sceneID="gMI-55-dYr">
@@ -132,35 +132,21 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKf-XT-PPQ">
-                                        <rect key="frame" x="345" y="35" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="8bQ-Sc-9tn"/>
-                                            <constraint firstAttribute="width" constant="20" id="roB-3k-h9i"/>
-                                        </constraints>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="CloseView"/>
-                                        <connections>
-                                            <action selector="closeMyRoomsPressed:" destination="1PG-PT-iW5" eventType="touchUpInside" id="0IM-HW-O8g"/>
-                                            <action selector="infoBtnPressed:" destination="NvP-Yp-pyC" eventType="touchUpInside" id="2Fd-qp-SPb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="vMU-EN-Gff" secondAttribute="bottom" constant="10" id="D5F-oS-ofG"/>
                                     <constraint firstItem="vMU-EN-Gff" firstAttribute="centerX" secondItem="GJn-ab-q9l" secondAttribute="centerX" id="Mvj-nA-Xes"/>
                                     <constraint firstAttribute="height" constant="65" id="SEK-MB-knK"/>
-                                    <constraint firstAttribute="bottom" secondItem="QKf-XT-PPQ" secondAttribute="bottom" constant="10" id="cfq-lV-xjH"/>
-                                    <constraint firstAttribute="trailing" secondItem="QKf-XT-PPQ" secondAttribute="trailing" constant="10" id="e8P-tn-5rj"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dxC-a6-fgK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dxC-a6-fgK">
                                 <rect key="frame" x="0.0" y="65" width="375" height="602"/>
-                                <color key="backgroundColor" red="0.1058658436" green="0.105891861" blue="0.1058642045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.1058658436" green="0.105891861" blue="0.1058642045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.88918728298611116" blue="0.64000108506944442" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dxC-a6-fgK" firstAttribute="top" secondItem="GJn-ab-q9l" secondAttribute="bottom" id="CtF-m9-9Fh"/>
                             <constraint firstAttribute="trailing" secondItem="dxC-a6-fgK" secondAttribute="trailing" id="OLC-8e-gX6"/>
@@ -172,12 +158,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="headerView" destination="GJn-ab-q9l" id="PRG-8C-UC5"/>
                         <outlet property="tableView" destination="dxC-a6-fgK" id="e66-pw-QXx"/>
+                        <segue destination="NvP-Yp-pyC" kind="presentation" identifier="goToNewRoom" id="tiL-uo-HLf"/>
+                        <segue destination="dyy-y4-XjI" kind="presentation" identifier="goToJoinRoomVC" id="rl1-JL-WsM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YmC-c5-Fax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="795.6521739130435"/>
+            <point key="canvasLocation" x="42" y="796"/>
         </scene>
         <!--Chat RoomVC-->
         <scene sceneID="b4m-jA-Vg4">
@@ -195,7 +184,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEW-e2-s2N">
-                                        <rect key="frame" x="162" y="31" width="52" height="24"/>
+                                        <rect key="frame" x="161.5" y="31" width="52" height="24"/>
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -211,12 +200,25 @@
                                             <action selector="infoBtnPressed:" destination="NvP-Yp-pyC" eventType="touchUpInside" id="cxB-ya-5xz"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKb-3N-ihY">
+                                        <rect key="frame" x="10" y="35" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4xx-yL-21t"/>
+                                            <constraint firstAttribute="width" constant="20" id="x1K-RA-6WT"/>
+                                        </constraints>
+                                        <state key="normal" image="MenuIcon"/>
+                                        <connections>
+                                            <action selector="homeBtnPressed:" destination="NvP-Yp-pyC" eventType="touchUpInside" id="s3w-RI-t7A"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GqS-OA-ZUN" secondAttribute="trailing" constant="10" id="73u-fL-03e"/>
+                                    <constraint firstItem="hKb-3N-ihY" firstAttribute="leading" secondItem="atw-LL-bze" secondAttribute="leading" constant="10" id="G4f-Td-WKc"/>
                                     <constraint firstAttribute="bottom" secondItem="aEW-e2-s2N" secondAttribute="bottom" constant="10" id="Ieu-ei-nZ9"/>
                                     <constraint firstAttribute="height" constant="65" id="Xd4-as-4Ml"/>
+                                    <constraint firstAttribute="bottom" secondItem="hKb-3N-ihY" secondAttribute="bottom" constant="10" id="czE-QF-p64"/>
                                     <constraint firstItem="aEW-e2-s2N" firstAttribute="centerX" secondItem="atw-LL-bze" secondAttribute="centerX" id="p6T-6c-wOX"/>
                                     <constraint firstAttribute="bottom" secondItem="GqS-OA-ZUN" secondAttribute="bottom" constant="10" id="qcM-Un-w5b"/>
                                 </constraints>
@@ -280,6 +282,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kJ-gO-fai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="796"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9SN-pX-V5s">
+            <objects>
+                <viewController id="86T-o3-j3z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldI-Fu-0DH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOn-wz-Xxn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ag-7q-pFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to add a nickname?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vs-4p-3LS">
+                                <rect key="frame" x="37.5" y="100" width="300" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2KJ-yU-YHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTE-1M-5Op">
+                                <rect key="frame" x="87.5" y="252" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dcs-5b-eSm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCF-fK-VDE">
+                                <rect key="frame" x="207.5" y="287" width="80" height="33"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                                <state key="normal" title="No, thanks."/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aTE-1M-5Op" firstAttribute="centerX" secondItem="0Ag-7q-pFb" secondAttribute="centerX" id="1HL-lp-uXF"/>
+                            <constraint firstItem="aTE-1M-5Op" firstAttribute="top" secondItem="5vs-4p-3LS" secondAttribute="bottom" constant="80" id="5oR-HI-sgz"/>
+                            <constraint firstItem="lCF-fK-VDE" firstAttribute="trailing" secondItem="aTE-1M-5Op" secondAttribute="trailing" id="7Te-Qr-omS"/>
+                            <constraint firstItem="lCF-fK-VDE" firstAttribute="top" secondItem="aTE-1M-5Op" secondAttribute="bottom" constant="5" id="OYh-sR-Ozj"/>
+                            <constraint firstItem="5vs-4p-3LS" firstAttribute="centerX" secondItem="0Ag-7q-pFb" secondAttribute="centerX" id="hJ3-8w-XQ1"/>
+                            <constraint firstItem="5vs-4p-3LS" firstAttribute="top" secondItem="ldI-Fu-0DH" secondAttribute="bottom" constant="80" id="o7z-4h-Kae"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EP-6K-ldc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="1500"/>
         </scene>
         <!--Room InfoVC-->
         <scene sceneID="HWz-h3-Jrd">
@@ -367,7 +420,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J46-v4-CKN">
-                                <rect key="frame" x="122" y="80" width="130" height="36"/>
+                                <rect key="frame" x="123" y="80" width="130" height="36"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -463,9 +516,11 @@
     </scenes>
     <resources>
         <image name="CloseView" width="28" height="28"/>
+        <image name="MenuIcon" width="40" height="30"/>
         <image name="SplashIcon" width="96" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kXE-OB-LCY"/>
+        <segue reference="tiL-uo-HLf"/>
+        <segue reference="rl1-JL-WsM"/>
     </inferredMetricsTieBreakers>
 </document>

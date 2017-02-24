@@ -13,12 +13,20 @@ class myRoomsCell: UITableViewCell, NibLoadableView {
     @IBOutlet weak var roomNumLbl: UILabel!
     @IBOutlet weak var roomMemberLbl: UILabel!
     
+    var name = ""
+
     
-    func configureCell(roomNum: String, memberCount: Int){
+    func configureCell(roomNum: String, memberCount: Int, roomData: Dictionary<String, AnyObject>){
         
+        if let name = roomData["roomName"] as? String {
+            self.name = name
+        }
         
-        
-        self.roomNumLbl.text = "Room \(roomNum)"
+        if (self.name != nil && self.name != "") {
+            self.roomNumLbl.text = self.name
+        } else {
+            self.roomNumLbl.text = "Room \(roomNum)"
+        }
         
         self.roomMemberLbl.text = "\(memberCount) Members"
         

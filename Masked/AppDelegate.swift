@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         IQKeyboardManager.sharedManager().enable = true
 
+        GADMobileAds.configure(withApplicationID: "pub-7814361165796718")
+
         return true
     }
 

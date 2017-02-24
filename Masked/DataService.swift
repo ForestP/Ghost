@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 
+
 class DataService {
     private static let _instance = DataService()
     
@@ -55,14 +56,14 @@ class DataService {
     
     func removeRoomAndContents(roomId: String) {
         
-        // remove room from userRooms
+        // remove room from userRooms FOR ALL MEMBERS
         roomMemberRef.child(roomId).observeSingleEvent(of: .value, with: { (snapshot) in
             if let members = snapshot.value as? Dictionary<String, AnyObject> {
                 for member in members {
-                    if let id  = member.key as? String {
-                        self.userRoomRef.child(id).child(roomId).removeValue()
-                    }
+                    let id  = member.key
+                    self.userRoomRef.child(id).child(roomId).removeValue()
                 }
+                
             }
             // remove room from roomMembers
             self.roomMemberRef.child(roomId).removeValue()
@@ -70,11 +71,24 @@ class DataService {
         
         
         // remove messages
-        // remove room from roomMessages
+        roomMessageRef.child(roomId).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let messages = snapshot.value as? Dictionary<String,AnyObject> {
+                for msg in messages {
+                    let id = msg.key
+                    self.messageRef.child(id).removeValue()
+                }
+            }
+            // remove room from roomMessages
+            self.roomMessageRef.child(roomId).removeValue()
+        })
         
         // remove room
         roomRef.child(roomId).removeValue()
         
+        
+    }
+    
+    func signUserIn() {
         
     }
     

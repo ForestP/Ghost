@@ -53,11 +53,10 @@ class chatRoomVC: UIViewController, ChatRoomServiceDelegate {
                     print("time : \(remainingTime)")
                     if remainingTime <= 0 {
                         print("delete room")
-                        self.ds.roomRef.child(self.roomId).removeValue()
                         // segue back to roomVC
+                        self.dismiss(animated: true, completion: nil)
                     } else {
                         // start timer, update label
-                        
                         self.timerLbl.text = self.convertToHrsMins(remainingTime: remainingTime)
                     }
                 }
@@ -133,6 +132,9 @@ class chatRoomVC: UIViewController, ChatRoomServiceDelegate {
     }
     
 
+    @IBAction func homeBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     @IBAction func infoBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: roomInfoSegue, sender: roomId)

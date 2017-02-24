@@ -12,6 +12,11 @@
 		AE027A8A1E561F2D00849B4E /* myRoomsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE027A881E561F2D00849B4E /* myRoomsCell.xib */; };
 		AE027A8C1E5689BF00849B4E /* myRoomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE027A8B1E5689BF00849B4E /* myRoomsVC.swift */; };
 		AE027A8E1E568AD300849B4E /* MyRoomsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE027A8D1E568AD300849B4E /* MyRoomsService.swift */; };
+		AE50D51A1E5BBEFD00329FA1 /* mainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5181E5BBEFD00329FA1 /* mainPageCell.swift */; };
+		AE50D51B1E5BBEFD00329FA1 /* mainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE50D5191E5BBEFD00329FA1 /* mainPageCell.xib */; };
+		AE50D51E1E5BC01900329FA1 /* roomActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D51C1E5BC01900329FA1 /* roomActionCell.swift */; };
+		AE50D51F1E5BC01900329FA1 /* roomActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE50D51D1E5BC01900329FA1 /* roomActionCell.xib */; };
+		AE50D5211E5C08E100329FA1 /* roundedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5201E5C08E100329FA1 /* roundedTableViewCell.swift */; };
 		AE53D2851E53C3ED00F87C8E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2841E53C3ED00F87C8E /* ReusableView.swift */; };
 		AE53D2871E53C41800F87C8E /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2861E53C41800F87C8E /* NibLoadableView.swift */; };
 		AE53D28A1E53C44500F87C8E /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53D2891E53C44500F87C8E /* UITableView+Ext.swift */; };
@@ -50,6 +55,11 @@
 		AE027A881E561F2D00849B4E /* myRoomsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myRoomsCell.xib; sourceTree = "<group>"; };
 		AE027A8B1E5689BF00849B4E /* myRoomsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myRoomsVC.swift; sourceTree = "<group>"; };
 		AE027A8D1E568AD300849B4E /* MyRoomsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomsService.swift; sourceTree = "<group>"; };
+		AE50D5181E5BBEFD00329FA1 /* mainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainPageCell.swift; sourceTree = "<group>"; };
+		AE50D5191E5BBEFD00329FA1 /* mainPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainPageCell.xib; sourceTree = "<group>"; };
+		AE50D51C1E5BC01900329FA1 /* roomActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roomActionCell.swift; sourceTree = "<group>"; };
+		AE50D51D1E5BC01900329FA1 /* roomActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = roomActionCell.xib; sourceTree = "<group>"; };
+		AE50D5201E5C08E100329FA1 /* roundedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedTableViewCell.swift; sourceTree = "<group>"; };
 		AE53D2841E53C3ED00F87C8E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		AE53D2861E53C41800F87C8E /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		AE53D2891E53C44500F87C8E /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
@@ -214,6 +224,11 @@
 				AE53D2A41E558A6D00F87C8E /* msgCellView.swift */,
 				AE027A871E561F2D00849B4E /* myRoomsCell.swift */,
 				AE027A881E561F2D00849B4E /* myRoomsCell.xib */,
+				AE50D5181E5BBEFD00329FA1 /* mainPageCell.swift */,
+				AE50D5191E5BBEFD00329FA1 /* mainPageCell.xib */,
+				AE50D51C1E5BC01900329FA1 /* roomActionCell.swift */,
+				AE50D51D1E5BC01900329FA1 /* roomActionCell.xib */,
+				AE50D5201E5C08E100329FA1 /* roundedTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -293,7 +308,9 @@
 			files = (
 				AECE3FA41E51897A00EEE364 /* LaunchScreen.storyboard in Resources */,
 				AECE3FB21E5190F000EEE364 /* SFDisplay-Light.otf in Resources */,
+				AE50D51F1E5BC01900329FA1 /* roomActionCell.xib in Resources */,
 				AECE3FA11E51897A00EEE364 /* Assets.xcassets in Resources */,
+				AE50D51B1E5BBEFD00329FA1 /* mainPageCell.xib in Resources */,
 				AE53D29B1E53C6D500F87C8E /* msgCell.xib in Resources */,
 				AE53D29F1E53C6E300F87C8E /* selfMsgCell.xib in Resources */,
 				AECE3FB01E5190F000EEE364 /* SFDisplay-Regular.otf in Resources */,
@@ -364,8 +381,10 @@
 				AECE3FB91E5194D100EEE364 /* roomButton.swift in Sources */,
 				AECE3F9A1E51897A00EEE364 /* AppDelegate.swift in Sources */,
 				AECE3FB71E51945B00EEE364 /* mainVC.swift in Sources */,
+				AE50D51E1E5BC01900329FA1 /* roomActionCell.swift in Sources */,
 				AE53D2851E53C3ED00F87C8E /* ReusableView.swift in Sources */,
 				AECE3FC81E52C39200EEE364 /* joinRoomVC.swift in Sources */,
+				AE50D51A1E5BBEFD00329FA1 /* mainPageCell.swift in Sources */,
 				AE53D2A51E558A6E00F87C8E /* msgCellView.swift in Sources */,
 				AECE3FC01E5198E300EEE364 /* DataService.swift in Sources */,
 				AECE3FCA1E52D84C00EEE364 /* messageView.swift in Sources */,
@@ -378,6 +397,7 @@
 				AECE3FC41E52BA3700EEE364 /* RoomInfoBox.swift in Sources */,
 				AE53D29E1E53C6E300F87C8E /* selfMsgCell.swift in Sources */,
 				AE027A8C1E5689BF00849B4E /* myRoomsVC.swift in Sources */,
+				AE50D5211E5C08E100329FA1 /* roundedTableViewCell.swift in Sources */,
 				AE53D28A1E53C44500F87C8E /* UITableView+Ext.swift in Sources */,
 				AECE3FC61E52BAC000EEE364 /* roomInfoVC.swift in Sources */,
 				AECE3FBB1E51977800EEE364 /* mainGradientView.swift in Sources */,

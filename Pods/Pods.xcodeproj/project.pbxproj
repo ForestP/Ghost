@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BC270E3CE0649E04255E9A27117D /* GTMSessionFetcherLogging.m */; };
-		0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF2D7E0122FC11C91EDFE989F75F232 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE9E8D1E4B7F1533CF1A630146500A /* GTMSessionFetcherLogging.m */; };
+		0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F55BD11C0A1B2B39DCA36DB96DD65E32 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F736F3A8F827FEBC48BAE5ED99F8A0E /* Foundation.framework */; };
-		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD7E9290C1366020984D8787C8A108B /* IQUIView+IQKeyboardToolbar.swift */; };
-		11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 75FFE5787BA273538D386D1A4473DBB3 /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDEE4ACE8730007E2D31C88AE03B1F6 /* IQUITextFieldView+Additions.swift */; };
+		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629BB1D3BC48B1091E4C3BF691BC9B /* IQUIView+IQKeyboardToolbar.swift */; };
+		11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 34670A08029D5566AC04BF9BB9E37554 /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9E772F7750F041936BCA2BE76A694 /* IQUITextFieldView+Additions.swift */; };
 		1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08537D43F705C6C8E2A45E3D98074E21 /* CoreGraphics.framework */; };
-		1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 440097CFA6D659E9A0469601928C9A90 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 960FFD268C8FEFF382EB75922EFD9CBE /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F9B999DFAA1052294448B64C77434B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F736F3A8F827FEBC48BAE5ED99F8A0E /* Foundation.framework */; };
-		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357586DAD440628B9469908E261384D7 /* IQUIScrollView+Additions.swift */; };
-		2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED828D2A480116D75798AC7E7A8653B /* IQUIView+Hierarchy.swift */; };
-		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0F5CD92CBB35411CEF31B478BBB7 /* IQBarButtonItem.swift */; };
-		2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDBF2A7735290B7FC6FB43318139FBF /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9463550DA9367DF8CE92133E4E07E2A /* GoogleToolboxForMac-dummy.m */; };
-		32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1F5A1FC75067BB0D2E42AEF9B5A2B5 /* IQTitleBarButtonItem.swift */; };
-		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D81E8C3741D31EE9BB823ED7762BD7 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B871B70518720BDB9F9F42BADF3D1A9 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D509B51F216E10690B9DDC5E3EB4D71 /* IQKeyboardManagerSwift-dummy.m */; };
-		5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65381049B97FB0B8FD72EE34B7ACA7 /* IQKeyboardReturnKeyHandler.swift */; };
-		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A5446FE779ACD99D38189369F9D86842 /* GTMSessionFetcher.m */; };
+		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BBCAAA9FD955B2F81A64B279F1E66 /* IQUIScrollView+Additions.swift */; };
+		2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590307621EEC58CB6011CFD8AAAE6F56 /* IQUIView+Hierarchy.swift */; };
+		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2206882756477E14A477846A8759C59 /* IQBarButtonItem.swift */; };
+		2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F36BF2BEF23CFAA9F6B4484CCE096C /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DAC378A6C3B375E6B88CCCA25E14D2 /* GoogleToolboxForMac-dummy.m */; };
+		32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BADBAEF6184F15B76BCDE3C5D4B9C19 /* IQTitleBarButtonItem.swift */; };
+		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 214458910B44B6F3A911BBEAABA39C4A /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 901A8151E5427C6CC8273653B9024795 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCAE766EFC135796824DEB08DB0DFC4 /* IQKeyboardManagerSwift-dummy.m */; };
+		5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B8962FD618837FAE40E2A09F04A19 /* IQKeyboardReturnKeyHandler.swift */; };
+		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CF2187C76EB674D15F3BBB70D48E2 /* GTMSessionFetcher.m */; };
 		65B56BD3DBC9B81BB008219D0BA735A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0174376E0D2D0541AA9B7DDE29F84F /* Security.framework */; };
-		6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3614D0A478BDEE3E960F4D07F05C78 /* GTMSessionFetcher-dummy.m */; };
-		8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = B94AF5B8B33ED42443C8453E8EB1D7EC /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD95C50D73A7EB784AE776B6BD8DD8 /* IQKeyboardManagerConstants.swift */; };
-		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 240E1A7B551507F09C328472A5C25B3D /* GTMSessionFetcherService.m */; };
+		6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C465855D420CD0616579A3B9928B7 /* GTMSessionFetcher-dummy.m */; };
+		8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEE9419F387200B948FC1E0CE655282 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49F8F4E7E9D66919A0512463B7E057 /* IQKeyboardManagerConstants.swift */; };
+		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 24904C6D5F9BD632C2EE9B89C273F4A5 /* GTMSessionFetcherService.m */; };
 		967551D370060AE0F4BC86BA2FE66E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F736F3A8F827FEBC48BAE5ED99F8A0E /* Foundation.framework */; };
-		A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032FFAFD845CE79BAD8BBD0AC95F9EDD /* IQPreviousNextView.swift */; };
-		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84278E40BBFB0EB4C644CE61C86834 /* IQKeyboardManager.swift */; };
-		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3262DA228461D214FDCB9099688F9 /* IQToolbar.swift */; };
-		B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = BC62B2659F90B3EE2E914CC303F4EB75 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150A792062E4953C8B20EAA02D015838 /* IQTextView.swift */; };
-		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D0C30368D476C682C5F1F0694FF86BD /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7ED9CF34A9AEA95DE10D32E826B2D9 /* IQPreviousNextView.swift */; };
+		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC4BD51510D3DDBD27AED072A6633A /* IQKeyboardManager.swift */; };
+		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513D14D298B568746F3EAE41F5754D9 /* IQToolbar.swift */; };
+		B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = B2742DDAB92DBECE39DBCFED2028F452 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1926D7A0B33DC67F80F7AF83F105337A /* IQTextView.swift */; };
+		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 744536E0F2DBD4F922520B2B309894EC /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6E62CFA695596FEB5EC0C90EDD39D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F736F3A8F827FEBC48BAE5ED99F8A0E /* Foundation.framework */; };
 		B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D39922AB27A0143A5ADB91D5CA30CF1 /* UIKit.framework */; };
-		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 427DA108AC2FEFD769FA2DB14F101FC4 /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161D694C12F861E593A3BD8DF0BADFD /* IQKeyboardManagerConstantsInternal.swift */; };
-		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 08422F5BAD30F1BF9E963F2255DDBBA1 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B3D72BC8B4121C2CBE9FC7A6A36426 /* IQUIWindow+Hierarchy.swift */; };
-		C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB512F23B0B2413FA77880E3BFC60C /* IQUIViewController+Additions.swift */; };
-		D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FEE652701C45129180466B3405C278 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F29D4A0856AAD5C15A720ECA698059 /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564F44E26596E3186CD42FD29CFC45A /* IQKeyboardManagerConstantsInternal.swift */; };
+		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E3315FCAABAAEEE930EF815902C02E /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87667A2E6D9AFBB14CABE781F9AC876F /* IQUIWindow+Hierarchy.swift */; };
+		C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8718247EBC94B3AFB98BD8DF1E63AD7 /* IQUIViewController+Additions.swift */; };
+		D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8963510C96CFA245BE54B6302DF29960 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2BFB0D337A7B572697BD76ED4084F8F /* Pods-Masked-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DE78E8703014B01B2C47C21B62A907 /* Pods-Masked-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C7FCF94F91AEE5E4E5F3427087007FD /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3850A873B8028D1CA747CE08CC48050 /* IQKeyboardManager.bundle */; };
-		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB79C718A35BE1B7D437077DA4966B8 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99807C2BB310B470BC6DEBD095B896E8 /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5180354E495BA4C44F7D0A35FDDF1E59 /* IQKeyboardManager.bundle */; };
+		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D79ECBE266273F2695AB17F4BCE776 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD2C448F08515DAEC67E9D1B6A582312 /* Pods-Masked-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FD96BA3525754FF1861D72597FD71E /* Pods-Masked-dummy.m */; };
-		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E44C8F2A57451EBC472B352AC7EB223 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4E4316EA2C0B1B62A49B053391164 /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9964139024C76258165DB7870E3695 /* IQNSArray+Sort.swift */; };
-		F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 754C5445A5DB54100E5F976961C2203E /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 919F5BADA742C03AFB80003DE2F5C056 /* GTMSessionUploadFetcher.m */; };
+		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 146C37F6E9E9C4B909107B7E630C33C0 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = A9862FE1FDF3C06F50F922C5EF8688C5 /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155FD178F37C94415D8C74AB7935DE3 /* IQNSArray+Sort.swift */; };
+		F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D09D00E98AD90ACA361DCE180C4E93C9 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C98216F7EA109C9F8FFEC8A9ED83E2 /* GTMSessionUploadFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,88 +84,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		032FFAFD845CE79BAD8BBD0AC95F9EDD /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		08422F5BAD30F1BF9E963F2255DDBBA1 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		01C98216F7EA109C9F8FFEC8A9ED83E2 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		0513D14D298B568746F3EAE41F5754D9 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		073C465855D420CD0616579A3B9928B7 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
 		08537D43F705C6C8E2A45E3D98074E21 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		0871C073B8B8B25D3F02D2E535F59CF3 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		0CF2D7E0122FC11C91EDFE989F75F232 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		0B8CF2187C76EB674D15F3BBB70D48E2 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		0E3A68CE2E7F4BF264805527F071C07F /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
 		0F736F3A8F827FEBC48BAE5ED99F8A0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		150A792062E4953C8B20EAA02D015838 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		1C097CF90F3640E5A9224935E2C269DF /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
-		1E90BAEC10D0FA0F608E2256308319B4 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		1ED828D2A480116D75798AC7E7A8653B /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		1EEB512F23B0B2413FA77880E3BFC60C /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		20C3262DA228461D214FDCB9099688F9 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		2187BC270E3CE0649E04255E9A27117D /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
-		240E1A7B551507F09C328472A5C25B3D /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		146C37F6E9E9C4B909107B7E630C33C0 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		1926D7A0B33DC67F80F7AF83F105337A /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		1A91FF347B5238F827A25DAFBA98F96F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		1F629BB1D3BC48B1091E4C3BF691BC9B /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		214458910B44B6F3A911BBEAABA39C4A /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		24904C6D5F9BD632C2EE9B89C273F4A5 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
 		252F3E8825CFBB4C13EAE5144ACF32F8 /* Pods-Masked-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Masked-resources.sh"; sourceTree = "<group>"; };
-		2694E43878272AFC48B2DDE59EA46A11 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
-		2CC98CD5C9BF5AC73C5010DEBD218AE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0C30368D476C682C5F1F0694FF86BD /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
-		3161D694C12F861E593A3BD8DF0BADFD /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
-		357586DAD440628B9469908E261384D7 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
-		3628D4AAB3D0E0963B10C50F827D9BF9 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		3A9964139024C76258165DB7870E3695 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		3B84278E40BBFB0EB4C644CE61C86834 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		3FCFE0B91500DFC59D72B48AC74B7C72 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		40EA4C7FD311A451546C8695E012B0A0 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		427DA108AC2FEFD769FA2DB14F101FC4 /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
-		440097CFA6D659E9A0469601928C9A90 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
-		46DF80E86077CFBE2AED800F44568CEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49FEE652701C45129180466B3405C278 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		27636FF15CD82E41918C5BFA0EBCD97E /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		2AD9E772F7750F041936BCA2BE76A694 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		34670A08029D5566AC04BF9BB9E37554 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		3BADBAEF6184F15B76BCDE3C5D4B9C19 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		485951E3F7CB7FCEB09D3B1784FC8E02 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		4A2B8962FD618837FAE40E2A09F04A19 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
 		4AFE0CA806088235CD9CBA3FDE896805 /* Pods-Masked-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Masked-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4CFF0F5CD92CBB35411CEF31B478BBB7 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
-		4D509B51F216E10690B9DDC5E3EB4D71 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		5236DBE14C95A33074111C4D23122E14 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		54C0D7E3FAF0D39D4E25AD9963DC57C8 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		5D86C377EB8B5B39EA9EB9312A7552CF /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		6C1F5A1FC75067BB0D2E42AEF9B5A2B5 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
-		6C7FCF94F91AEE5E4E5F3427087007FD /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
-		6E44C8F2A57451EBC472B352AC7EB223 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
-		6F739149F8B3627B113DE6895891D268 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
-		73FD95C50D73A7EB784AE776B6BD8DD8 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		754C5445A5DB54100E5F976961C2203E /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
-		75FFE5787BA273538D386D1A4473DBB3 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		5121A4C0F171E31F9F5C1459D5A9CAB9 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		5155FD178F37C94415D8C74AB7935DE3 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		5180354E495BA4C44F7D0A35FDDF1E59 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		55007775081701D4E7D79C5B7D179553 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		5564F44E26596E3186CD42FD29CFC45A /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		590307621EEC58CB6011CFD8AAAE6F56 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		5AEE9419F387200B948FC1E0CE655282 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		62F29D4A0856AAD5C15A720ECA698059 /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
+		67C2F06A37DA7C535C02E58076E43DDF /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		70DFDCFAE3320185A0DCC7F520055B47 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		71E3315FCAABAAEEE930EF815902C02E /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		744536E0F2DBD4F922520B2B309894EC /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		7503266756CD2950EB34CCE4AE0D4103 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
 		77B91CCAC5E0CBDC10ABC85BFABB961A /* Pods-Masked-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Masked-acknowledgements.plist"; sourceTree = "<group>"; };
 		78E5606559DAB6412859CAC44B558922 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C0174376E0D2D0541AA9B7DDE29F84F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		7CD7E9290C1366020984D8787C8A108B /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
-		81B3D72BC8B4121C2CBE9FC7A6A36426 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
-		8302844E9ECB285704BD2A60EAEAF575 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		8B056C403B924A8BD9FCADE330E28150 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		8B871B70518720BDB9F9F42BADF3D1A9 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		81D7C266F268151BE6F31585C7CC6D79 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		85D79ECBE266273F2695AB17F4BCE776 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		87667A2E6D9AFBB14CABE781F9AC876F /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		87D16602FB96D2FC514525C3A558ECE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8963510C96CFA245BE54B6302DF29960 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		8D39922AB27A0143A5ADB91D5CA30CF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8F3614D0A478BDEE3E960F4D07F05C78 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
-		919F5BADA742C03AFB80003DE2F5C056 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		901A8151E5427C6CC8273653B9024795 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		91DC670FFF24BDFE99C96E19303215F1 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C5F55D121E384ED233728FE02AA2C7 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CDEE4ACE8730007E2D31C88AE03B1F6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		A15C89296B494B74466758B33D4EF6A7 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		960FFD268C8FEFF382EB75922EFD9CBE /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		99807C2BB310B470BC6DEBD095B896E8 /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		9AEDD45B1F63610753A7F91A542AEE44 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		A1EA451612D94A6D87E724B457239984 /* Pods-Masked.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Masked.release.xcconfig"; sourceTree = "<group>"; };
-		A3850A873B8028D1CA747CE08CC48050 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		A5446FE779ACD99D38189369F9D86842 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		A9862FE1FDF3C06F50F922C5EF8688C5 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
 		A9B33210131BD0D27B6C2ECFB8FB72B8 /* Pods-Masked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Masked.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1404594A7F93F3A51DB84AEEE0ACFF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5E3B91BE6C53E8714C17E9284EDA77 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
-		B94AF5B8B33ED42443C8453E8EB1D7EC /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
-		BB15286A407B33D9181AC35DB29255B3 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		BC62B2659F90B3EE2E914CC303F4EB75 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
-		BEDBF2A7735290B7FC6FB43318139FBF /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		AD10E9ECA39A85D8AB3E8C23EE4CB52A /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		B2742DDAB92DBECE39DBCFED2028F452 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		B5F36BF2BEF23CFAA9F6B4484CCE096C /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		B6FBD15A324084BE2B4163C3510A9A5C /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		BC0F7D58278C88BB5DE5AE5B721F5CD9 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		BC7ED9CF34A9AEA95DE10D32E826B2D9 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		C2DE78E8703014B01B2C47C21B62A907 /* Pods-Masked-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Masked-umbrella.h"; sourceTree = "<group>"; };
-		C473C21284D1F0AD040F8B837632522D /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		C6FD96BA3525754FF1861D72597FD71E /* Pods-Masked-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Masked-dummy.m"; sourceTree = "<group>"; };
-		D1A181BF416C0652EE42A83679517744 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		C8718247EBC94B3AFB98BD8DF1E63AD7 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		C8EE9E8D1E4B7F1533CF1A630146500A /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		CEDC4BD51510D3DDBD27AED072A6633A /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		D09D00E98AD90ACA361DCE180C4E93C9 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		D2206882756477E14A477846A8759C59 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		D34FF8F5BE2C71A5FCED59DAB7CFA2C6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8AB86523DF356553703E7DB79C2A144 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8F5A23193D7661F3D571650C9802FAC /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		E01D27461B504374EC68195D3E58C28A /* Pods-Masked.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Masked.modulemap"; sourceTree = "<group>"; };
-		E2D81E8C3741D31EE9BB823ED7762BD7 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
-		E9463550DA9367DF8CE92133E4E07E2A /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		ECB79C718A35BE1B7D437077DA4966B8 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		E1DAC378A6C3B375E6B88CCCA25E14D2 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		E2F61B494CF2259BC3BF477AD9627C05 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		EAF8F5D819E2BB8A0D6FB87A390B697F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECFC1B48EA3D5EBE5A0D85BAF6930A21 /* Pods-Masked-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Masked-frameworks.sh"; sourceTree = "<group>"; };
+		EE286CFEA8AAD1C4AB1FC7DBE57191DC /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
 		EEF746C450FF7B1A053EAB2620A48E9A /* Pods_Masked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Masked.framework; path = "Pods-Masked.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5E4E4316EA2C0B1B62A49B053391164 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
-		FD65381049B97FB0B8FD72EE34B7ACA7 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		F28BBCAAA9FD955B2F81A64B279F1E66 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		F55BD11C0A1B2B39DCA36DB96DD65E32 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		F6FF3884B3FB2BE384A91A2E85131F0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCAE766EFC135796824DEB08DB0DFC4 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		FD49F8F4E7E9D66919A0512463B7E057 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,32 +205,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B4CF6442CE05A0D2B29864A49FFADC /* Pods */ = {
+		06E0987A28A390678DBE510B8F7832CF /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				150BAE3BD9F1C18553E53C8DB0CDC3D0 /* Firebase */,
-				A47EBFDCF17F46E9AD5F12880BC8AC50 /* FirebaseAnalytics */,
-				7036C1F550B5A7B33CD03ECD926F17FA /* FirebaseAuth */,
-				D5B577B9D987FAECE53C82D9038AED5A /* FirebaseCore */,
-				5E632FE7BD0098D3F67F801DA8DB163B /* FirebaseDatabase */,
-				619ADDB9382ADE7AE491AA4515FEE4E5 /* FirebaseInstanceID */,
-				9D06BCC4A6C137981E48F60B1BF0BF17 /* FirebaseStorage */,
-				95DA077CA2CEEB6FFE2871DB48769962 /* GoogleInterchangeUtilities */,
-				13258E620BA893D05037F36E25E48850 /* GoogleSymbolUtilities */,
-				1EF8669440375C35D88EB8170DFDF46E /* GoogleToolboxForMac */,
-				769B5ECDDC26C0786E5642DD73EBDEE0 /* GTMSessionFetcher */,
-				AD1968960B118EC5BA5691BAB540E44A /* IQKeyboardManagerSwift */,
+				FFC62108637C1C99E3C8451279735714 /* Core */,
 			);
-			name = Pods;
+			name = Firebase;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		13258E620BA893D05037F36E25E48850 /* GoogleSymbolUtilities */ = {
+		0EFCE2362B921B3DFBC1F668B85B230E /* GTMSessionFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				58FE00508DDBD688C6619A0EABCDCFF0 /* Frameworks */,
+				7DA6E11193DFDA60FB2BA15C1BC7652D /* Core */,
+				AE0DC9165F479CA97515EABB8F7AEB2F /* Support Files */,
 			);
-			name = GoogleSymbolUtilities;
-			path = GoogleSymbolUtilities;
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -243,62 +232,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		150BAE3BD9F1C18553E53C8DB0CDC3D0 /* Firebase */ = {
+		1D961F00D2C1DBEE90ED692E672193AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E91FAE2F4338FF8D4B809F1F50025979 /* Core */,
+				67C2F06A37DA7C535C02E58076E43DDF /* FirebaseInstanceID.framework */,
 			);
-			name = Firebase;
-			path = Firebase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1EF8669440375C35D88EB8170DFDF46E /* GoogleToolboxForMac */ = {
+		232D83C27870318507F6E0597CD071F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E74BAB97B4368A9733C2E13E39E334EB /* DebugUtils */,
-				9C3C9275319F81565E29C77760697F38 /* Defines */,
-				F157E71CDC9D40FFF405185756BCEDF2 /* NSData+zlib */,
-				69E8BC7CC6B4B9F548E89B15B5B29131 /* NSDictionary+URLArguments */,
-				8A4617874552D42E8058152BB9B64FC0 /* NSString+URLArguments */,
-				F14C01D6BCE543CF65360E44DAA3A0A6 /* Support Files */,
-			);
-			name = GoogleToolboxForMac;
-			path = GoogleToolboxForMac;
-			sourceTree = "<group>";
-		};
-		25606869FA7F2546DBD20A943885F19F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B94AF5B8B33ED42443C8453E8EB1D7EC /* GTMSessionFetcher.h */,
-				A5446FE779ACD99D38189369F9D86842 /* GTMSessionFetcher.m */,
-				440097CFA6D659E9A0469601928C9A90 /* GTMSessionFetcherLogging.h */,
-				2187BC270E3CE0649E04255E9A27117D /* GTMSessionFetcherLogging.m */,
-				6E44C8F2A57451EBC472B352AC7EB223 /* GTMSessionFetcherService.h */,
-				240E1A7B551507F09C328472A5C25B3D /* GTMSessionFetcherService.m */,
-				754C5445A5DB54100E5F976961C2203E /* GTMSessionUploadFetcher.h */,
-				919F5BADA742C03AFB80003DE2F5C056 /* GTMSessionUploadFetcher.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		27A2E6B1ABB225CB6198E1359090318A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2CC98CD5C9BF5AC73C5010DEBD218AE3 /* Info.plist */,
-				D1A181BF416C0652EE42A83679517744 /* IQKeyboardManagerSwift.modulemap */,
-				1E90BAEC10D0FA0F608E2256308319B4 /* IQKeyboardManagerSwift.xcconfig */,
-				4D509B51F216E10690B9DDC5E3EB4D71 /* IQKeyboardManagerSwift-dummy.m */,
-				54C0D7E3FAF0D39D4E25AD9963DC57C8 /* IQKeyboardManagerSwift-prefix.pch */,
-				2D0C30368D476C682C5F1F0694FF86BD /* IQKeyboardManagerSwift-umbrella.h */,
+				5121A4C0F171E31F9F5C1459D5A9CAB9 /* GoogleToolboxForMac.modulemap */,
+				81D7C266F268151BE6F31585C7CC6D79 /* GoogleToolboxForMac.xcconfig */,
+				E1DAC378A6C3B375E6B88CCCA25E14D2 /* GoogleToolboxForMac-dummy.m */,
+				E2F61B494CF2259BC3BF477AD9627C05 /* GoogleToolboxForMac-prefix.pch */,
+				F55BD11C0A1B2B39DCA36DB96DD65E32 /* GoogleToolboxForMac-umbrella.h */,
+				EAF8F5D819E2BB8A0D6FB87A390B697F /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManagerSwift";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
-		3881486D4148AE5F678AFC540D1262C8 /* Frameworks */ = {
+		32DD6BAD9CE7DB713A822EEC9E387A90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C473C21284D1F0AD040F8B837632522D /* FirebaseStorage.framework */,
+				9AEDD45B1F63610753A7F91A542AEE44 /* FirebaseCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -321,53 +280,70 @@
 			path = "Target Support Files/Pods-Masked";
 			sourceTree = "<group>";
 		};
-		4ACC4F4502C872B5FF0EF2E9EE87E05A /* Support Files */ = {
+		46004D29F8C574850C15BB6FBFBDF388 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2694E43878272AFC48B2DDE59EA46A11 /* GTMSessionFetcher.modulemap */,
-				AE5E3B91BE6C53E8714C17E9284EDA77 /* GTMSessionFetcher.xcconfig */,
-				8F3614D0A478BDEE3E960F4D07F05C78 /* GTMSessionFetcher-dummy.m */,
-				6F739149F8B3627B113DE6895891D268 /* GTMSessionFetcher-prefix.pch */,
-				6C7FCF94F91AEE5E4E5F3427087007FD /* GTMSessionFetcher-umbrella.h */,
-				46DF80E86077CFBE2AED800F44568CEC /* Info.plist */,
+				5180354E495BA4C44F7D0A35FDDF1E59 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4F650663431A56CC1C58FBD6F99640AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A91FF347B5238F827A25DAFBA98F96F /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5514103F8128856D1EC8A5CA28CB6AA1 /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8B11A336A19627F8FF27555D294C5916 /* Frameworks */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		55F2A61BEF4C8CD3636C685967FD52BF /* NSString+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				85D79ECBE266273F2695AB17F4BCE776 /* GTMNSString+URLArguments.h */,
+				901A8151E5427C6CC8273653B9024795 /* GTMNSString+URLArguments.m */,
+			);
+			name = "NSString+URLArguments";
+			sourceTree = "<group>";
+		};
+		5A053A4D61EB057AD040AFFE94475AD0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6FF3884B3FB2BE384A91A2E85131F0F /* Info.plist */,
+				EE286CFEA8AAD1C4AB1FC7DBE57191DC /* IQKeyboardManagerSwift.modulemap */,
+				0E3A68CE2E7F4BF264805527F071C07F /* IQKeyboardManagerSwift.xcconfig */,
+				FCCAE766EFC135796824DEB08DB0DFC4 /* IQKeyboardManagerSwift-dummy.m */,
+				485951E3F7CB7FCEB09D3B1784FC8E02 /* IQKeyboardManagerSwift-prefix.pch */,
+				744536E0F2DBD4F922520B2B309894EC /* IQKeyboardManagerSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GTMSessionFetcher";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
 			sourceTree = "<group>";
 		};
-		52CD4DC8C1436E4EB6ED0185F4AE9BF0 /* Frameworks */ = {
+		629F65E9CD9CB96D9E6DEE75239E9520 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				8B056C403B924A8BD9FCADE330E28150 /* FirebaseDatabase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		58FE00508DDBD688C6619A0EABCDCFF0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BB15286A407B33D9181AC35DB29255B3 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5E632FE7BD0098D3F67F801DA8DB163B /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				52CD4DC8C1436E4EB6ED0185F4AE9BF0 /* Frameworks */,
-			);
-			name = FirebaseDatabase;
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		619ADDB9382ADE7AE491AA4515FEE4E5 /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				A15C89296B494B74466758B33D4EF6A7 /* FIRInstanceID.h */,
-				C64E82C9A049E964F0901F8F9EAF890A /* Frameworks */,
+				1D961F00D2C1DBEE90ED692E672193AC /* Frameworks */,
 			);
 			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		65B7E17524911A1C6FD452B3CE213351 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				71E3315FCAABAAEEE930EF815902C02E /* GTMNSData+zlib.h */,
+				B5F36BF2BEF23CFAA9F6B4484CCE096C /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
 		693C3441CB0EEE50FB104D31AC69AE94 /* Targets Support Files */ = {
@@ -378,19 +354,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		69E8BC7CC6B4B9F548E89B15B5B29131 /* NSDictionary+URLArguments */ = {
+		699122A16A058F4278DAC3CFE311E192 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				75FFE5787BA273538D386D1A4473DBB3 /* GTMNSDictionary+URLArguments.h */,
-				F5E4E4316EA2C0B1B62A49B053391164 /* GTMNSDictionary+URLArguments.m */,
+				32DD6BAD9CE7DB713A822EEC9E387A90 /* Frameworks */,
 			);
-			name = "NSDictionary+URLArguments";
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
-		7036C1F550B5A7B33CD03ECD926F17FA /* FirebaseAuth */ = {
+		6BF61CAE88F2C5E6963E4AD14495C065 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				B09E13AE543E30FD19F6DEC23A4EDF45 /* Frameworks */,
+				4F650663431A56CC1C58FBD6F99640AA /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		6D65252950A713ADE99FC369F797FF47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06E0987A28A390678DBE510B8F7832CF /* Firebase */,
+				901ED0274DD5E4BEDEE3094C324891AE /* FirebaseAnalytics */,
+				6ECCB4B0887731725FB8FB9D579376E9 /* FirebaseAuth */,
+				699122A16A058F4278DAC3CFE311E192 /* FirebaseCore */,
+				6BF61CAE88F2C5E6963E4AD14495C065 /* FirebaseDatabase */,
+				629F65E9CD9CB96D9E6DEE75239E9520 /* FirebaseInstanceID */,
+				990446F443397FB4F49A0D23A7622C0A /* FirebaseStorage */,
+				5514103F8128856D1EC8A5CA28CB6AA1 /* Google-Mobile-Ads-SDK */,
+				E5058D15A7C2AAF8AF3B49FA1BCBCDD5 /* GoogleToolboxForMac */,
+				0EFCE2362B921B3DFBC1F668B85B230E /* GTMSessionFetcher */,
+				B7C4D118DC9A2A5B230CE3525F79A228 /* IQKeyboardManagerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6ECCB4B0887731725FB8FB9D579376E9 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B64EB14715375DE0E71001438DDF5190 /* Frameworks */,
 			);
 			name = FirebaseAuth;
 			path = FirebaseAuth;
@@ -407,14 +410,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		769B5ECDDC26C0786E5642DD73EBDEE0 /* GTMSessionFetcher */ = {
+		79F5100568F3A57180FF4C9B9FBDE765 /* DebugUtils */ = {
 			isa = PBXGroup;
 			children = (
-				25606869FA7F2546DBD20A943885F19F /* Core */,
-				4ACC4F4502C872B5FF0EF2E9EE87E05A /* Support Files */,
+				B2742DDAB92DBECE39DBCFED2028F452 /* GTMDebugSelectorValidation.h */,
+				214458910B44B6F3A911BBEAABA39C4A /* GTMDebugThreadValidation.h */,
+				62F29D4A0856AAD5C15A720ECA698059 /* GTMMethodCheck.h */,
 			);
-			name = GTMSessionFetcher;
-			path = GTMSessionFetcher;
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		7DA6E11193DFDA60FB2BA15C1BC7652D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5AEE9419F387200B948FC1E0CE655282 /* GTMSessionFetcher.h */,
+				0B8CF2187C76EB674D15F3BBB70D48E2 /* GTMSessionFetcher.m */,
+				960FFD268C8FEFF382EB75922EFD9CBE /* GTMSessionFetcherLogging.h */,
+				C8EE9E8D1E4B7F1533CF1A630146500A /* GTMSessionFetcherLogging.m */,
+				146C37F6E9E9C4B909107B7E630C33C0 /* GTMSessionFetcherService.h */,
+				24904C6D5F9BD632C2EE9B89C273F4A5 /* GTMSessionFetcherService.m */,
+				D09D00E98AD90ACA361DCE180C4E93C9 /* GTMSessionUploadFetcher.h */,
+				01C98216F7EA109C9F8FFEC8A9ED83E2 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -422,121 +440,109 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				00B4CF6442CE05A0D2B29864A49FFADC /* Pods */,
+				6D65252950A713ADE99FC369F797FF47 /* Pods */,
 				74930FBE068DA21DA820CBCB9E60E6A8 /* Products */,
 				693C3441CB0EEE50FB104D31AC69AE94 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A4617874552D42E8058152BB9B64FC0 /* NSString+URLArguments */ = {
+		8B11A336A19627F8FF27555D294C5916 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ECB79C718A35BE1B7D437077DA4966B8 /* GTMNSString+URLArguments.h */,
-				8B871B70518720BDB9F9F42BADF3D1A9 /* GTMNSString+URLArguments.m */,
+				91DC670FFF24BDFE99C96E19303215F1 /* GoogleMobileAds.framework */,
 			);
-			name = "NSString+URLArguments";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95DA077CA2CEEB6FFE2871DB48769962 /* GoogleInterchangeUtilities */ = {
+		8CD4548E411A10367412DA97F79E8A4A /* NSDictionary+URLArguments */ = {
 			isa = PBXGroup;
 			children = (
-				D1CD5ACAA43F71D867F2AD6CB8E2BAFE /* Frameworks */,
+				34670A08029D5566AC04BF9BB9E37554 /* GTMNSDictionary+URLArguments.h */,
+				A9862FE1FDF3C06F50F922C5EF8688C5 /* GTMNSDictionary+URLArguments.m */,
 			);
-			name = GoogleInterchangeUtilities;
-			path = GoogleInterchangeUtilities;
+			name = "NSDictionary+URLArguments";
 			sourceTree = "<group>";
 		};
-		9C3C9275319F81565E29C77760697F38 /* Defines */ = {
+		901ED0274DD5E4BEDEE3094C324891AE /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				49FEE652701C45129180466B3405C278 /* GTMDefines.h */,
-			);
-			name = Defines;
-			sourceTree = "<group>";
-		};
-		9D06BCC4A6C137981E48F60B1BF0BF17 /* FirebaseStorage */ = {
-			isa = PBXGroup;
-			children = (
-				3881486D4148AE5F678AFC540D1262C8 /* Frameworks */,
-			);
-			name = FirebaseStorage;
-			path = FirebaseStorage;
-			sourceTree = "<group>";
-		};
-		A47EBFDCF17F46E9AD5F12880BC8AC50 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				E2DD0364D559117AA85B7CE61DF41496 /* Frameworks */,
+				9EF9BED504D3DC80730DFE2A63D184F2 /* Frameworks */,
 			);
 			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		AD1968960B118EC5BA5691BAB540E44A /* IQKeyboardManagerSwift */ = {
+		990446F443397FB4F49A0D23A7622C0A /* FirebaseStorage */ = {
 			isa = PBXGroup;
 			children = (
-				4CFF0F5CD92CBB35411CEF31B478BBB7 /* IQBarButtonItem.swift */,
-				3B84278E40BBFB0EB4C644CE61C86834 /* IQKeyboardManager.swift */,
-				73FD95C50D73A7EB784AE776B6BD8DD8 /* IQKeyboardManagerConstants.swift */,
-				3161D694C12F861E593A3BD8DF0BADFD /* IQKeyboardManagerConstantsInternal.swift */,
-				FD65381049B97FB0B8FD72EE34B7ACA7 /* IQKeyboardReturnKeyHandler.swift */,
-				3A9964139024C76258165DB7870E3695 /* IQNSArray+Sort.swift */,
-				032FFAFD845CE79BAD8BBD0AC95F9EDD /* IQPreviousNextView.swift */,
-				150A792062E4953C8B20EAA02D015838 /* IQTextView.swift */,
-				6C1F5A1FC75067BB0D2E42AEF9B5A2B5 /* IQTitleBarButtonItem.swift */,
-				20C3262DA228461D214FDCB9099688F9 /* IQToolbar.swift */,
-				357586DAD440628B9469908E261384D7 /* IQUIScrollView+Additions.swift */,
-				9CDEE4ACE8730007E2D31C88AE03B1F6 /* IQUITextFieldView+Additions.swift */,
-				1ED828D2A480116D75798AC7E7A8653B /* IQUIView+Hierarchy.swift */,
-				7CD7E9290C1366020984D8787C8A108B /* IQUIView+IQKeyboardToolbar.swift */,
-				1EEB512F23B0B2413FA77880E3BFC60C /* IQUIViewController+Additions.swift */,
-				81B3D72BC8B4121C2CBE9FC7A6A36426 /* IQUIWindow+Hierarchy.swift */,
-				C22AC47B0CDB3C904220E9D641762B43 /* Resources */,
-				27A2E6B1ABB225CB6198E1359090318A /* Support Files */,
+				E4A29AB6E9D555233FC64B5D31902056 /* Frameworks */,
+			);
+			name = FirebaseStorage;
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		9EF9BED504D3DC80730DFE2A63D184F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55007775081701D4E7D79C5B7D179553 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE0DC9165F479CA97515EABB8F7AEB2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6FBD15A324084BE2B4163C3510A9A5C /* GTMSessionFetcher.modulemap */,
+				7503266756CD2950EB34CCE4AE0D4103 /* GTMSessionFetcher.xcconfig */,
+				073C465855D420CD0616579A3B9928B7 /* GTMSessionFetcher-dummy.m */,
+				27636FF15CD82E41918C5BFA0EBCD97E /* GTMSessionFetcher-prefix.pch */,
+				99807C2BB310B470BC6DEBD095B896E8 /* GTMSessionFetcher-umbrella.h */,
+				87D16602FB96D2FC514525C3A558ECE4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		B64EB14715375DE0E71001438DDF5190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F7D58278C88BB5DE5AE5B721F5CD9 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7C4D118DC9A2A5B230CE3525F79A228 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D2206882756477E14A477846A8759C59 /* IQBarButtonItem.swift */,
+				CEDC4BD51510D3DDBD27AED072A6633A /* IQKeyboardManager.swift */,
+				FD49F8F4E7E9D66919A0512463B7E057 /* IQKeyboardManagerConstants.swift */,
+				5564F44E26596E3186CD42FD29CFC45A /* IQKeyboardManagerConstantsInternal.swift */,
+				4A2B8962FD618837FAE40E2A09F04A19 /* IQKeyboardReturnKeyHandler.swift */,
+				5155FD178F37C94415D8C74AB7935DE3 /* IQNSArray+Sort.swift */,
+				BC7ED9CF34A9AEA95DE10D32E826B2D9 /* IQPreviousNextView.swift */,
+				1926D7A0B33DC67F80F7AF83F105337A /* IQTextView.swift */,
+				3BADBAEF6184F15B76BCDE3C5D4B9C19 /* IQTitleBarButtonItem.swift */,
+				0513D14D298B568746F3EAE41F5754D9 /* IQToolbar.swift */,
+				F28BBCAAA9FD955B2F81A64B279F1E66 /* IQUIScrollView+Additions.swift */,
+				2AD9E772F7750F041936BCA2BE76A694 /* IQUITextFieldView+Additions.swift */,
+				590307621EEC58CB6011CFD8AAAE6F56 /* IQUIView+Hierarchy.swift */,
+				1F629BB1D3BC48B1091E4C3BF691BC9B /* IQUIView+IQKeyboardToolbar.swift */,
+				C8718247EBC94B3AFB98BD8DF1E63AD7 /* IQUIViewController+Additions.swift */,
+				87667A2E6D9AFBB14CABE781F9AC876F /* IQUIWindow+Hierarchy.swift */,
+				46004D29F8C574850C15BB6FBFBDF388 /* Resources */,
+				5A053A4D61EB057AD040AFFE94475AD0 /* Support Files */,
 			);
 			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
-		B09E13AE543E30FD19F6DEC23A4EDF45 /* Frameworks */ = {
+		C93D6159100A3C6FF4891372331A371B /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				5D86C377EB8B5B39EA9EB9312A7552CF /* FirebaseAuth.framework */,
+				8963510C96CFA245BE54B6302DF29960 /* GTMDefines.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C22AC47B0CDB3C904220E9D641762B43 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A3850A873B8028D1CA747CE08CC48050 /* IQKeyboardManager.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C64E82C9A049E964F0901F8F9EAF890A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8302844E9ECB285704BD2A60EAEAF575 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D1CD5ACAA43F71D867F2AD6CB8E2BAFE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5236DBE14C95A33074111C4D23122E14 /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D5B577B9D987FAECE53C82D9038AED5A /* FirebaseCore */ = {
-			isa = PBXGroup;
-			children = (
-				E86EF65323DF8FA37D222E4473CB2E68 /* Frameworks */,
-			);
-			name = FirebaseCore;
-			path = FirebaseCore;
+			name = Defines;
 			sourceTree = "<group>";
 		};
 		E217A4D1FAD72D3D08F429BF4D8E1C72 /* iOS */ = {
@@ -550,61 +556,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E2DD0364D559117AA85B7CE61DF41496 /* Frameworks */ = {
+		E4A29AB6E9D555233FC64B5D31902056 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40EA4C7FD311A451546C8695E012B0A0 /* FirebaseAnalytics.framework */,
+				70DFDCFAE3320185A0DCC7F520055B47 /* FirebaseStorage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E74BAB97B4368A9733C2E13E39E334EB /* DebugUtils */ = {
+		E5058D15A7C2AAF8AF3B49FA1BCBCDD5 /* GoogleToolboxForMac */ = {
 			isa = PBXGroup;
 			children = (
-				BC62B2659F90B3EE2E914CC303F4EB75 /* GTMDebugSelectorValidation.h */,
-				E2D81E8C3741D31EE9BB823ED7762BD7 /* GTMDebugThreadValidation.h */,
-				427DA108AC2FEFD769FA2DB14F101FC4 /* GTMMethodCheck.h */,
+				79F5100568F3A57180FF4C9B9FBDE765 /* DebugUtils */,
+				C93D6159100A3C6FF4891372331A371B /* Defines */,
+				65B7E17524911A1C6FD452B3CE213351 /* NSData+zlib */,
+				8CD4548E411A10367412DA97F79E8A4A /* NSDictionary+URLArguments */,
+				55F2A61BEF4C8CD3636C685967FD52BF /* NSString+URLArguments */,
+				232D83C27870318507F6E0597CD071F8 /* Support Files */,
 			);
-			name = DebugUtils;
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
-		E86EF65323DF8FA37D222E4473CB2E68 /* Frameworks */ = {
+		FFC62108637C1C99E3C8451279735714 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3FCFE0B91500DFC59D72B48AC74B7C72 /* FirebaseCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E91FAE2F4338FF8D4B809F1F50025979 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				D8F5A23193D7661F3D571650C9802FAC /* Firebase.h */,
+				AD10E9ECA39A85D8AB3E8C23EE4CB52A /* Firebase.h */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		F14C01D6BCE543CF65360E44DAA3A0A6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1C097CF90F3640E5A9224935E2C269DF /* GoogleToolboxForMac.modulemap */,
-				3628D4AAB3D0E0963B10C50F827D9BF9 /* GoogleToolboxForMac.xcconfig */,
-				E9463550DA9367DF8CE92133E4E07E2A /* GoogleToolboxForMac-dummy.m */,
-				0871C073B8B8B25D3F02D2E535F59CF3 /* GoogleToolboxForMac-prefix.pch */,
-				0CF2D7E0122FC11C91EDFE989F75F232 /* GoogleToolboxForMac-umbrella.h */,
-				D8AB86523DF356553703E7DB79C2A144 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		F157E71CDC9D40FFF405185756BCEDF2 /* NSData+zlib */ = {
-			isa = PBXGroup;
-			children = (
-				08422F5BAD30F1BF9E963F2255DDBBA1 /* GTMNSData+zlib.h */,
-				BEDBF2A7735290B7FC6FB43318139FBF /* GTMNSData+zlib.m */,
-			);
-			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -850,7 +829,7 @@
 /* Begin XCBuildConfiguration section */
 		3AF861AEADA89A377F12178D493BED95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3628D4AAB3D0E0963B10C50F827D9BF9 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 81D7C266F268151BE6F31585C7CC6D79 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -993,7 +972,7 @@
 		};
 		881B19BB9961D509DACE94450066151E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3628D4AAB3D0E0963B10C50F827D9BF9 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 81D7C266F268151BE6F31585C7CC6D79 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1025,7 +1004,7 @@
 		};
 		8B057773120D53DBB692700549D84EAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E90BAEC10D0FA0F608E2256308319B4 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 0E3A68CE2E7F4BF264805527F071C07F /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1057,7 +1036,7 @@
 		};
 		A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E90BAEC10D0FA0F608E2256308319B4 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 0E3A68CE2E7F4BF264805527F071C07F /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1090,7 +1069,7 @@
 		};
 		B9C7324D0ADEABED7BC7B2D9C608C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5E3B91BE6C53E8714C17E9284EDA77 /* GTMSessionFetcher.xcconfig */;
+			baseConfigurationReference = 7503266756CD2950EB34CCE4AE0D4103 /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1166,7 +1145,7 @@
 		};
 		ED969C86CBBA712335D5E741625E75B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5E3B91BE6C53E8714C17E9284EDA77 /* GTMSessionFetcher.xcconfig */;
+			baseConfigurationReference = 7503266756CD2950EB34CCE4AE0D4103 /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

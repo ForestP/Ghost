@@ -21,21 +21,18 @@ extension Member {
         
         let snapshot = snapshot
         
-        if let uid = snapshot.key as? String,
-            let userNum = snapshot.value as? String {
-          
-                
-                return Member (
-                    uid: uid,
-                    userNum: userNum
-                )
-            
-            
+        let uid = snapshot.key
+        if let userNum = snapshot.value as? String {
+            return Member (
+                uid: uid,
+                userNum: userNum
+            )
         }
         
+        
         return nil
-    }
     
+    }
     
     
 }
