@@ -170,7 +170,20 @@ class chatRoomVC: UIViewController, ChatRoomServiceDelegate {
         
         self.msgTextView.resignFirstResponder()
         
+        self.tableViewScrollToBottom(animated: true)
         
+    }
+    
+    func tableViewScrollToBottom(animated: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
+            let numberOfSections = self.tableView.numberOfSections
+            let numberOfRows = self.tableView.numberOfRows(inSection: numberOfSections-1)
+            
+            if numberOfRows > 0 {
+                let indexPath = IndexPath(row: numberOfRows-1, section: (numberOfSections-1))
+                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: animated)
+            }
+        }
     }
     
     func convertToHrsMins(remainingTime: Double) -> String {
@@ -241,5 +254,6 @@ extension chatRoomVC: UITableViewDelegate, UITableViewDataSource {
         return UITableViewAutomaticDimension;
     }
     
+
     
 }

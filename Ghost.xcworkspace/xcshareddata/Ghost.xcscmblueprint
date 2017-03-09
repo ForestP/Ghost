@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "39484105BDFB35FDBE13C3BD9E424C3EC05FF0C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "39484105BDFB35FDBE13C3BD9E424C3EC05FF0C6" : 9223372036854775807,
+    "FBCF50352E1E55C44623886083E583485600030E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EF509BC3-F4C6-4A56-AFFA-3545D688BB4F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "39484105BDFB35FDBE13C3BD9E424C3EC05FF0C6" : "Ghost\/",
+    "FBCF50352E1E55C44623886083E583485600030E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Ghost",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Ghost.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ForestP\/Ghost.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "39484105BDFB35FDBE13C3BD9E424C3EC05FF0C6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ForestP\/Ghost",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FBCF50352E1E55C44623886083E583485600030E"
+    }
+  ]
+}

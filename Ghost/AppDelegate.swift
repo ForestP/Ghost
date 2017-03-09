@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         GADMobileAds.configure(withApplicationID: "pub-7814361165796718")
 
+        UIApplication.shared.statusBarStyle = .lightContent
+
         return true
     }
 

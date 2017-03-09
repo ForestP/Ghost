@@ -16,8 +16,6 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
     @IBOutlet weak var roomNumField: UITextField!
     @IBOutlet weak var roomPassField: UITextField!
     
-    let joinRoomSegue = "goToJoinedRoom"
-    
     let jrs = JoinRoomService.instance
     
     var uid: String?
@@ -25,17 +23,6 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        let view = mainView!
-        let gradient = CAGradientLayer()
-        
-        let topColor = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1)
-        let bottomColor = UIColor(red: 25/255, green: 25/255, blue: 25/255, alpha: 1)
-        
-        gradient.frame = view.bounds
-        gradient.colors = [topColor.cgColor, bottomColor.cgColor]
-        
-        view.layer.insertSublayer(gradient, at: 0)
         IQKeyboardManager.sharedManager().enableAutoToolbar = false
 
         self.jrs.delegate = self
@@ -52,6 +39,9 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
         self.tryToJoin()
     }
 
+    @IBAction func closeJoinRoomPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func tryToJoin() {
         
@@ -88,8 +78,6 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
         roomPass = self.roomPassField.text!
         
         
-        
-        // Refactor into service
         jrs.tryToJoin(roomNum: roomNum, roomPass: roomPass)
         
     }
@@ -98,7 +86,12 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
         if let userID = self.uid {
             let ds = DataService.instance
             ds.addUserToRoom(uid: userID, RoomId: roomNum, userNum: userNum)
-            self.performSegue(withIdentifier: self.joinRoomSegue, sender: roomNum)
+            
+            let presentingViewController: myRoomsVC! = self.presentingViewController as! myRoomsVC!
+            
+            self.dismiss(animated: true) {
+                presentingViewController.segueToChatRoom(roomNum: roomNum)
+            }
         }
     }
     
@@ -112,12 +105,5 @@ class joinRoomVC: UIViewController, JoinRoomServiceDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == self.joinRoomSegue {
-            let chatRoomVC = (segue.destination as? chatRoomVC)
-            chatRoomVC?.roomId = sender as! String
-            
-        }
-    }
     
 }

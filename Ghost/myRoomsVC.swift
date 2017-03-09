@@ -125,6 +125,10 @@ class myRoomsVC: UIViewController, MyRoomsServiceDelegate {
         self.performSegue(withIdentifier: self.joinRoomSegue, sender: self.currentUser)
 
     }
+    
+    func segueToChatRoom(roomNum: String) {
+        self.performSegue(withIdentifier: self.chatRoomSeque , sender: roomNum)
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == self.createRoomSegue {
@@ -142,6 +146,8 @@ class myRoomsVC: UIViewController, MyRoomsServiceDelegate {
             chatRoomVC?.roomId = sender as? String
         }
     }
+    
+    
 
 }
 

@@ -11,9 +11,7 @@ import UIKit
 class msgCellView: UIView {
     
     override func awakeFromNib() {
-        
-        let BORDER = 250/255
-        
+                
         // layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.15).cgColor
         // layer.shadowRadius = 1
         

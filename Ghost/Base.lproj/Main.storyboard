@@ -74,14 +74,14 @@
                     <connections>
                         <outlet property="headerView" destination="GJn-ab-q9l" id="PRG-8C-UC5"/>
                         <outlet property="tableView" destination="dxC-a6-fgK" id="e66-pw-QXx"/>
-                        <segue destination="dyy-y4-XjI" kind="presentation" identifier="goToJoinRoomVC" id="rl1-JL-WsM"/>
                         <segue destination="86T-o3-j3z" kind="presentation" identifier="goToNewRoom" id="rw6-xR-ic9"/>
                         <segue destination="NvP-Yp-pyC" kind="presentation" identifier="goToChatVC" id="qLA-br-UT1"/>
+                        <segue destination="dyy-y4-XjI" kind="presentation" identifier="goToJoinRoomVC" id="oS1-hc-exf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YmC-c5-Fax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="795.6521739130435"/>
+            <point key="canvasLocation" x="-10" y="796"/>
         </scene>
         <!--Chat RoomVC-->
         <scene sceneID="b4m-jA-Vg4">
@@ -273,12 +273,11 @@
                     </view>
                     <connections>
                         <outlet property="roomNameField" destination="aTE-1M-5Op" id="pwB-Qi-76i"/>
-                        <segue destination="NvP-Yp-pyC" kind="presentation" identifier="goToChatRoom" id="WOt-eP-Hp0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EP-6K-ldc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="1601.649175412294"/>
+            <point key="canvasLocation" x="-10" y="1576"/>
         </scene>
         <!--Room InfoVC-->
         <scene sceneID="HWz-h3-Jrd">
@@ -320,7 +319,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4Y-JC-WwS">
-                                                <rect key="frame" x="18.5" y="60" width="149.5" height="60"/>
+                                                <rect key="frame" x="18" y="60" width="150" height="60"/>
                                                 <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -406,7 +405,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="q3i-UI-oJ6">
-                                        <rect key="frame" x="7" y="70" width="172" height="30"/>
+                                        <rect key="frame" x="8" y="70" width="172" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBO-j7-NG8">
                                                 <rect key="frame" x="0.0" y="0.0" width="93" height="30"/>
@@ -445,11 +444,26 @@
                                     <action selector="joinPressed:" destination="dyy-y4-XjI" eventType="touchUpInside" id="SQb-eS-RDX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-N8-qlE">
+                                <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="SE9-TE-mAM"/>
+                                    <constraint firstAttribute="height" constant="20" id="zmz-7S-1Ck"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" image="CloseView"/>
+                                <connections>
+                                    <action selector="closeJoinRoomPressed:" destination="dyy-y4-XjI" eventType="touchUpInside" id="Omq-LO-RAA"/>
+                                    <action selector="closeRoomInfoPressed:" destination="5dN-KM-0Za" eventType="touchUpInside" id="Zv9-WD-3nt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YBM-gx-jvD" firstAttribute="leading" secondItem="57q-uu-vkw" secondAttribute="leading" id="8KG-EL-ZXY"/>
+                            <constraint firstItem="qwN-N8-qlE" firstAttribute="top" secondItem="57q-uu-vkw" secondAttribute="top" constant="20" id="CF8-eQ-Nzc"/>
                             <constraint firstItem="JAf-DO-McL" firstAttribute="top" secondItem="6fn-nU-cFP" secondAttribute="bottom" constant="250" id="Fjh-SA-HLv"/>
+                            <constraint firstItem="qwN-N8-qlE" firstAttribute="leading" secondItem="57q-uu-vkw" secondAttribute="leading" constant="20" id="HgM-Qk-h2t"/>
                             <constraint firstAttribute="trailing" secondItem="YBM-gx-jvD" secondAttribute="trailing" id="K0u-9K-Qwi"/>
                             <constraint firstItem="6fn-nU-cFP" firstAttribute="centerX" secondItem="57q-uu-vkw" secondAttribute="centerX" id="Rv5-mo-XwY"/>
                             <constraint firstItem="LNq-pi-a5f" firstAttribute="centerX" secondItem="57q-uu-vkw" secondAttribute="centerX" id="STQ-Gy-333"/>
@@ -464,12 +478,11 @@
                         <outlet property="mainView" destination="57q-uu-vkw" id="ZbU-Nq-zx1"/>
                         <outlet property="roomNumField" destination="Zuw-dH-JKN" id="kMn-z7-fZS"/>
                         <outlet property="roomPassField" destination="oxh-oj-q38" id="yaS-rh-a1V"/>
-                        <segue destination="NvP-Yp-pyC" kind="show" identifier="goToJoinedRoom" id="vnv-Co-dUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSN-WQ-VIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.60000000000002" y="37.331334332833585"/>
+            <point key="canvasLocation" x="902" y="54"/>
         </scene>
     </scenes>
     <resources>
@@ -479,7 +492,4 @@
         <image name="CloseView" width="28" height="28"/>
         <image name="MenuIcon" width="40" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vnv-Co-dUH"/>
-    </inferredMetricsTieBreakers>
 </document>

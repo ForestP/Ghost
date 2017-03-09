@@ -13,8 +13,6 @@ class roomNameVC: UIViewController {
     var roomId: String!
     let ds = DataService.instance
     
-    let finishCreateSeque = "goToChatRoom"
-    
     @IBOutlet weak var roomNameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,18 +39,16 @@ class roomNameVC: UIViewController {
         
         // passed guards add nickname to room
         ds.addRoomNickName(roomId: self.roomId, roomName: name)
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == self.finishCreateSeque {
-            let chatRoomVC = (segue.destination as? chatRoomVC)
-            chatRoomVC?.roomId = sender as! String
-        }
         
+        let presentingViewController: myRoomsVC! = self.presentingViewController as! myRoomsVC!
 
+        self.dismiss(animated: true) { 
+            presentingViewController.segueToChatRoom(roomNum: self.roomId)
+        }
     }
+    
+    
+
 
 
 
